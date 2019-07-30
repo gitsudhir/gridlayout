@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    body>div {
+      display: flex;
+      /* background-color: lightblue; */
+      width: 100%;
+      height: 100vh;
+    }
+
+    #sidebar {
+      width: 65%;
+      height: 100vh;
+      /* border: 1px solid cyan; */
+      margin-top: 20px;
+      margin-left: 15px;
+    }
+
+    #sidebar>div {
+      /* border: 1px solid red; */
+
+    }
+
+    #sidebar div form {
+      margin-left: 10px;
+      margin-top: 17px;
+      color: #9d9da8;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* background-color: DodgerBlue; */
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      width: 350px;
+      margin: 10px;
+      /* padding: 10px; */
+      /* text-align: center; */
+      /* line-height: 75px; */
+      /* font-size: 30px; */
+    }
+
+    .flex-card {
+      /* border: 1px solid red; */
+      padding: 3%;
+      line-height: 16px;
+    }
+
+    .flex-card>div:nth-child(2) {
+      /* border: 1px solid red; */
+      position: relative;
+      /* background: url('https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg'); */
+      /* background-size: cover; */
+
+    }
+
+    .flex-card>div:nth-child(2)>img:nth-child(2) {
+      width: 100%;
+    }
+
+    .flex-card div span#star {
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      background: green;
+      color: white;
+      padding: 5px 11px;
+      margin: 0px 0px;
+      border-radius: 3px;
+    }
+
+    .flex-card div span#totalImages {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      background: #0c0d0c87;
+      color: white;
+      padding: 0px 5px;
+      margin: 9px 1px;
+      border: 1px solid white;
+      border-radius: 3px;
+    }
+
+    .flex-card>div:nth-child(2)>img:nth-child(1) {
+      width: 90%;
+      height: 70vh;
+    }
+
+    #read {
+      background-image: linear-gradient(to right, rgb(226, 39, 39), rgb(231, 54, 157));
+      color: white;
+      width: 108px;
+      border-radius: 5px;
+      height: 35px;
+      font-size: 16px;
+    }
+
+    #agra {
+      width: 213px;
+      border: 1px solid blue;
+      color: #6f6fdfc4;
+      height: 35px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="sidebar">
+      <div><b style="color: pink;color: #e6a584;
+
+            font-size: 27px;">Themes</b>
+
+        <form action="#">
+          <label for="">Holiday Themes</label> <br><br>
+          <input type="checkbox" name="" id="">Honeymoon <br><br>
+          <input type="checkbox" name="" id=""> Beach <br><br>
+          <input type="checkbox" name="" id=""> Boutique<br><br>
+          <input type="checkbox" name="" id=""> Budget<br><br>
+          <input type="checkbox" name="" id=""> Luxury<br><br>
+          <input type="checkbox" name="" id=""> Family <br><br>
+          <br>
+
+        </form>
+      </div>
+      <div>
+
+          <b style="color: pink;color: #e6a584;
+
+          font-size: 27px;">Region</b>
+
+        <br>
+
+        <b>Across Country</b><br>
+        <b>North India</b><br>
+        <b>South India</b><br>
+        <b>East India</b><br>
+        <b>West India</b><br>
+        <b>Central India</b><br>
+        <b>North East</b><br>
+        <b>International</b><br>
+      </div>
+      <div>ACTIVITIES</div>
+      <div>BEST TIME TO VISIT</div>
+      <div>POPULARITY</div>
+
+
+    </div>
+    <div class="flex-container">
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="flex-card">
+          <p><b>1.Agra,Uttar Pradesh</b></p>
+          <div>
+            <span id="star">4.2</span>
+            <img
+              src="https://dw8stlw9qt0iz.cloudfront.net/0w3V_tOh60YdcvdTVqFHyH7XW0c=/fit-in/800x450/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/landscape/standard/ae0a74de-7368-4ed6-d1de-30492169e90c.jpg"
+              alt="" srcset="">
+            <span id="totalImages">
+              <div> <span
+                  style="background: url('https://image.flaticon.com/icons/svg/118/118761.svg');width: 4px;height: 4px;"></span>
+                145</div>photos
+            </span>
+          </div>
+          <div>
+            <p style="color: darkgray">210 kms from Delhi</p>
+            <p style="color: darkgray">current Weather : 12-21 c</p>
+            <p><b>Known For : </b><a href="http://">TajMahal</a> | <a href="http://">Fatehpur sikri </a> | <a
+                href="http://">Agra</a></p>
+            <p>
+              Home to one of the 7 wonders of thr workd , Taj Magal, Agra is a sneak peek into the architextural history
+              wit other strucures suxh as Agra Fort and Fatehpur Sikri and hence makes fir a must visit for anyonr
+              kiving in or vising India.
+
+
+            </p>
+            <p><b>Best Time : </b>October to March</p>
+
+            <button id="read">Read More</button>
+            <button id="agra">18 Agra Attractions</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
