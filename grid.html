@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #grid-div {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-auto-rows: minmax(200px, auto);
+            grid-template-areas:
+                "nav head head"
+                "aside main main"
+                "foot foot foot";
+        }
+
+        @media only screen and (max-width: 600px) {
+            #grid-div {
+
+                grid-template-areas:
+                    "nav nav nav"
+                    "head head head"
+                    "aside aside aside"
+                    "main main main"
+                    "foot foot foot";
+            }
+
+
+
+            #grid-div>* {
+                border: 1px solid rgb(40, 184, 76);
+            }
+        }
+
+        #grid-div>* {
+            border: 1px solid rgb(65, 11, 165);
+        }
+
+
+        #grid-div>nav {
+            grid-area: nav;
+        }
+
+
+        #grid-div>header {
+            grid-area: head;
+        }
+
+
+        #grid-div>main {
+            grid-area: main;
+        }
+
+
+        #grid-div>aside {
+            grid-area: aside;
+        }
+
+
+        #grid-div>footer {
+            grid-area: foot;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="grid-div">
+        <nav>navigatioin</nav>
+        <header>header</header>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>foter</footer>
+    </div>
+</body>
+
+</html>
